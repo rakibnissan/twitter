@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite run for Twitter">
+<suite name="Suite test for Twitter">
+<listeners>
+<listener class-name="Listener.TListener"></listener>
+</listeners>
 
-	<listeners>
-
-		<listener class-name="Listener.TListener" />
-
-
-	</listeners>
-
-
-	<test name="Test on T Log In">
+	<test name="Test for Sign In">
 		<classes>
 			<class name="TestCases.TLogIn" />
+
 		</classes>
 	</test> <!-- Test -->
 
-
-	<test name="Test on Obama Search">
+	<test name="Test for Search">
 		<classes>
+
 			<class name="TestCases.SearchObama" />
 		</classes>
 	</test> <!-- Test -->
+
 </suite> <!-- Suite -->
