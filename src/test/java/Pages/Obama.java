@@ -1,6 +1,7 @@
 package Pages;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 
 public class Obama {
@@ -16,11 +17,11 @@ public class Obama {
 		return this;
 	}
 
-	public Trump trumpsearch (WebDriver driver){
+	/*public Trump trumpsearch (WebDriver driver){
 
 		driver.findElement(By.xpath("//input[@id='search-query']")).sendKeys("Trump");
 		driver.findElement(By.xpath("//*[@id='global-nav-search']/span/button")).click();
 		return new Trump(driver);
-	}
+	}*/
 
 }

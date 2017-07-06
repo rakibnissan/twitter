@@ -33,10 +33,5 @@ public class HomePage {
 	
 	
 	
-	public Obama toSearch(){
-		driver.findElement(By.xpath("//input[@id='search-query']")).sendKeys("Obama");
-		driver.findElement(By.xpath("//*[@id='global-nav-search']/span/button")).click();
-	return new Obama(driver);
-}
 
 }

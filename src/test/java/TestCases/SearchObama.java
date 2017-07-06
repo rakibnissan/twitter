@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import Pages.HomePage;
+import Pages.SignIn;
 
 public class SearchObama {
 	WebDriver driver = new FirefoxDriver();
@@ -18,8 +19,9 @@ public class SearchObama {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		HomePage Hp = new HomePage(driver);
+		SignIn s = new SignIn(driver);
 		Hp.toLogin();
-		Hp.toSearch();
+		s.toSearch();
 		driver.close();
 	}
 }

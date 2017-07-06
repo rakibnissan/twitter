@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import Pages.HomePage;
-import Pages.Obama;
+//import Pages.Obama;
 
 public class PrecticeTwitter {
 	
@@ -19,9 +19,9 @@ public class PrecticeTwitter {
 		
 		HomePage hp = new HomePage(driver);
 		hp.toLogin();
-		Obama o = hp.toSearch();
+		/*Obama o = hp.toSearch();
 		o.ToVideo();
-		o.trumpsearch(driver);
+		o.trumpsearch(driver);*/
 	}
 
 }
